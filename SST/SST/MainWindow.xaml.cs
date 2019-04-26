@@ -45,12 +45,12 @@ namespace SST
 
             if (!m_Serial.IsOpen)
             {
-                m_Serial.PortName = SerialPortBox.SelectedValue.ToString();
-                m_Serial.BaudRate = int.Parse(BaudRateBox.SelectedValue.ToString());
-                m_Serial.Parity = (ParityBox.SelectedValue.ToString() == "None") ? Parity.None : Parity.None;
-                m_Serial.DataBits = int.Parse(BaudRateBox.SelectedValue.ToString());
-                m_Serial.StopBits = (StopBitsBox.SelectedValue.ToString() == "1")? StopBits.One : StopBits.None;
-                m_Serial.Handshake = (HandshakeBox.SelectedValue.ToString() == "None") ? Handshake.None : Handshake.XOnXOff;
+                m_Serial.PortName = SerialPortBox.Text;
+                m_Serial.BaudRate = int.Parse(BaudRateBox.Text);
+                m_Serial.Parity = (ParityBox.Text == "None") ? Parity.None : Parity.None;
+                m_Serial.DataBits = int.Parse(DataBitsBox.Text);
+                m_Serial.StopBits = (StopBitsBox.Text == "1")? StopBits.One : StopBits.None;
+                m_Serial.Handshake = (HandshakeBox.Text == "None") ? Handshake.None : Handshake.XOnXOff;
                 m_Serial.Open();
             }
 
@@ -58,7 +58,7 @@ namespace SST
 
             m_SSHClient = new SshClient(HostBox.Text, int.Parse(PortBox.Text), UserNameBox.Text, PasswordInputBox.Password);
             m_SSHClient.Connect();
-            m_SSHStream = m_SSHClient.CreateShellStream(TerminalTypeBox.SelectedValue.ToString(), uint.Parse(TerminalWidthBox.SelectedValue.ToString()), uint.Parse(TerminalHeightBox.SelectedValue.ToString()), 100, 100, 1024);
+            m_SSHStream = m_SSHClient.CreateShellStream(TerminalTypeBox.Text, uint.Parse(TerminalWidthBox.Text), uint.Parse(TerminalHeightBox.Text), 100, 100, 1024);
             m_SSHStream.DataReceived += SSHDataReceived;
             m_Serial.DataReceived += SerialDataReceived;
         }
