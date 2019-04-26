@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SST"
         mc:Ignorable="d"
-        Title="Secure Serial Tunnel" Height="450" Width="800">
+        Title="Secure Serial Tunnel" Height="600" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="24" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
+            <RowDefinition Height="26" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
