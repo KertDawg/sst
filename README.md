@@ -28,4 +28,4 @@ To run the app:
 The following work needs to be done to improve functionality.
 1. Better error handling.
 2. Save/load support.  Secure storage of SSH host information and serial terminal configuration would make this easier to use.
-3. SSH public key certificcate support.  This would allow for use of SSH in more situations.
+3. SSH public key certificate support.  This would allow for use of SSH in more situations.
